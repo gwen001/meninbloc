@@ -1,0 +1,12 @@
+<p class="appstore">
+  {{ with .Site.Params.appstore.android }}
+  <a href="{{ . }}" class="android external">
+    <img src="{{ "img/android-store.png" | absURL }}">
+  </a>
+  {{end}}
+  {{ with .Site.Params.appstore.ios }}
+  <a href="{{ . }}" class="ios external">
+    <img src="{{ "img/ios-store.png" | absURL }}">
+  </a>
+  {{end}}
+</p>

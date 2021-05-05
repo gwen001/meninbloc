@@ -1,0 +1,113 @@
+baseurl = "http://wo.meninbloc.com/"
+title = "(wo)meninbloc"
+languageCode = "en-us"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "it's just about block climbing"
+  copyright = ""
+  sidebarAbout = [
+    "it's just about block climbing",
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "you@yoursite.com"
+
+    # Optional Matomo analytics (formerly piwik)
+      # [params.analytics.matomo]
+      #  URL = "https://stats.example.com"
+      #  ID = "42"
+      #  # Track all subdomains with "*.example.com" (Optional)
+      #  domain = "www.example.com"
+      #  # Optional integrity check hash
+      #  hash = ""
+
+  # Nav links in the side bar
+  # [[params.navlinks]]
+  # name = "Home"
+  # url = "portfolio/"
+  # home = true
+
+
+# Menu links
+[[menu.main]]
+    name = "Moves"
+    weight = 2
+    url  = "/moves/"
+[[menu.main]]
+    name = "Holds"
+    weight = 3
+    url  = "/holds/"
+[[menu.main]]
+    name = "Gym reviews"
+    weight = 1
+    url  = "/reviews/"
+[[menu.main]]
+    name = "Routesetting"
+    weight = 4
+    url  = "/routesetting/"
+
+[[menu.tags]]
+    name = "review"
+    weight = 1
+    url  = "/tags/review"
+    [menu.tags.params]
+      class = "brown"
+[[menu.tags]]
+    name = "arkose"
+    weight = 2
+    url  = "/tags/arkose/"
+    [menu.tags.params]
+      class = "blue"
+[[menu.tags]]
+    name = "le rempart"
+    weight = 2
+    url  = "/tags/le-rempart/"
+    [menu.tags.params]
+      class = "green"
+[[menu.tags]]
+    name = "vertical art"
+    weight = 2
+    url  = "/tags/vertical-art/"
+    [menu.tags.params]
+      class = "red"
+[[menu.tags]]
+    name = "climb up"
+    weight = 2
+    url  = "/tags/climb-up/"
+    [menu.tags.params]
+      class = "pink"
+[[menu.tags]]
+    name = "block'out"
+    weight = 2
+    url  = "/tags/block-out/"
+    [menu.tags.params]
+      class = "orange"
+
+
+  # [[params.navlinks]]
+  # name = "About"
+  # url = "about/"
+
+  # [[params.navlinks]]
+  # name = "Get in touch"
+  # url = "contact/"
+
+  [params.social]
+  instagram     = "https://www.instagram.com/meninbloc"

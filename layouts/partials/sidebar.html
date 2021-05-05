@@ -1,0 +1,45 @@
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+    <div class="sidebar-content">
+        <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}"><img src="{{ "img/logo.jpeg" | absURL }}" width="200"></a></h1>
+
+        <div class="copyright">
+            <p class="credit">
+                {{ with .Site.Params.copyright }}
+                {{ . | safeHTML }}
+                {{ end }}
+            </p>
+        </div>
+
+        {{ range .Site.Params.sidebarAbout }}
+        <p class="sidebar-p">{{ . | safeHTML }}</p>
+        {{ end }}
+
+        <ul class="sidebar-menu">
+            {{ with .Site.Menus.main}}
+                {{ range sort . }}
+                    <li class="navigation-item">
+                        <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+
+        <h5>LATEST</h5>
+        <ul class="sidebar-menu">
+            {{ range first 10 $.Site.RegularPages.ByPublishDate.Reverse }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+
+        <div class="sidebar-menu-tags">
+                {{ with .Site.Menus.tags}}
+                    {{ range sort . }}
+                        <a class="ui label {{ .Params.Class }}" href="{{ .URL | absLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+                    {{ end }}
+            {{ end }}
+        </div>
+
+        {{ partial "social_buttons_in_sidebar.html" . }}
+        {{ partial "appstore.html" . }}
+    </div>
+</div>
