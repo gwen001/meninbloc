@@ -6,13 +6,13 @@
                 {{ range $.Site.RegularPages.ByPublishDate.Reverse }}
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                     <div class="box-masonry">
-                        {{ if and (isset .Params "preview") .Params.preview }}
+                        {{ if .Params.preview }}
                             <a href="{{ .Permalink }}" title="" class="box-masonry-image">
                                 <img src="{{.Params.preview | absURL}}" alt="" class="img-responsive">
                             </a>
                         {{ else }}
                             <a href="{{ .Permalink }}" title="" class="box-masonry-image">
-                                <img src="{{"img/default-preview.jpeg" | absURL}}" alt="" class="img-responsive">
+                                <img src="{{"img/previews/default.jpg" | absURL}}" alt="" class="img-responsive">
                             </a>
                         {{ end }}
                         {{ if eq .Params.showonlyimage true }}
@@ -24,9 +24,9 @@
                             <div class="box-masonry-description">
                                 <p>
                                     {{ if .Description }}
-                                    {{ .Description }}
+                                        {{ .Description }}
                                     {{ else }}
-                                    {{ .Summary }}
+                                        {{ .Summary }}
                                     {{ end }}
                                 </p>
                             </div>
@@ -38,13 +38,13 @@
                 {{ range .Data.Pages }}
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
                     <div class="box-masonry">
-                        {{ if and (isset .Params "preview") .Params.preview }}
+                        {{ if .Params.preview }}
                             <a href="{{ .Permalink }}" title="" class="box-masonry-image">
                                 <img src="{{.Params.preview | absURL}}" alt="" class="img-responsive">
                             </a>
                         {{ else }}
                             <a href="{{ .Permalink }}" title="" class="box-masonry-image">
-                                <img src="{{"img/default-preview.jpeg" | absURL}}" alt="" class="img-responsive">
+                                <img src="{{"img/previews/default.jpg" | absURL}}" alt="" class="img-responsive">
                             </a>
                         {{ end }}
                         {{ if eq .Params.showonlyimage true }}
@@ -56,9 +56,9 @@
                             <div class="box-masonry-description">
                                 <p>
                                     {{ if .Description }}
-                                    {{ .Description }}
+                                     {{ .Description }}
                                     {{ else }}
-                                    {{ .Summary }}
+                                        {{ .Summary }}
                                     {{ end }}
                                 </p>
                             </div>

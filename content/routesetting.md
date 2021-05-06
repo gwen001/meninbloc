@@ -1,11 +1,8 @@
 +++
-date = "2021-03-21"
+date = "2020-01-03"
 title = "Routesetting"
-draft = false
 preview = "img/previews/routesetting.png"
 image = "img/articles/routesetting.png"
-showonlyimage = false
-weight = 1
 +++
 
 About routesetting.

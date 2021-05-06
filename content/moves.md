@@ -1,11 +1,8 @@
 +++
-date = "2021-03-21"
+date = "2020-01-01"
 title = "Moves"
-draft = false
 preview = "img/previews/moves.png"
 image = "img/articles/moves.png"
-showonlyimage = false
-weight = 1
 +++
 
 A curated list of climbing moves.

@@ -35,9 +35,11 @@ blockquote {
     border-left: 5px solid #0594cb;
     font-size: 1em;
 }
+
+
 .content-column {
-    /* padding-top: 28px; */
     padding: 0px;
+    padding-top: 28px;
 }
 #sidebar {
     padding-top: 30px;
@@ -82,10 +84,12 @@ blockquote {
     border: 4px;
     border-bottom: 0px;
 }
-#sidebar .sidebar-menu:first-of-type {
+#sidebar .sidebar-menu {
+    /* margin-bottom: 40px; */
     margin-top: 40px;
 }
-#sidebar .sidebar-menu:last-of-type {
+#sidebar .latest .sidebar-menu:last-of-type {
+    margin-top: 0px;
     margin-bottom: 40px;
 }
 #sidebar .social {
@@ -171,8 +175,11 @@ blockquote {
     /* height: 160px; */
     padding: 15px 20px 10px 20px;
 }
-.box-masonry .box-masonry-text p:last-of-type {
-    margin-bottom: 0px;
+.box-masonry .box-masonry-hover-text-header p,
+.box-masonry .box-masonry-hover-text-header .box-masonry-description p,
+.box-masonry .box-masonry-text p,
+.box-masonry .box-masonry-text .box-masonry-description p {
+    margin-bottom: 5px;
 }
 .box-masonry .box-masonry-text p {
     font-size: 0.875em;
@@ -184,6 +191,43 @@ blockquote {
 .sidebar-menu-tags a {
     margin-bottom: 5px !important;
 }
+
+.btn-ghost {
+    color: #444;
+    background-color: transparent;
+    border: 0px;
+}
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active,
+.btn-ghost.active,
+.open .dropdown-toggle.btn-ghost {
+    color: #444;
+    background-color: transparent;ßßß
+    border: 0px;
+}
+.btn-ghost .badge {
+    color: transparent;
+    background-color: transparent;
+  }
+  .btn-ghost:hover,
+  .btn-ghost:focus,
+  .btn-ghost:active,
+  .btn-ghost.active,
+  .open .dropdown-toggle.btn-ghost {
+    color: #444 !important;
+    background-color: transparent;
+    border: 0px;
+  }
+  .btn-ghost:hover i,
+  .btn-ghost:focus i,
+  .btn-ghost:active i,
+  .btn-ghost.active i,
+  .open .dropdown-toggle.btn-ghost i {
+    color: #444 !important;
+  }
+
+
 .ui.red.label, .ui.red.labels .label {
     background-color: #DB2828!important;
     border-color: #DB2828!important;
@@ -322,13 +366,15 @@ blockquote {
 
 .entry-image {
     position: relative;
+    /* width: 100%; */
+    /* top: 0px; */
     top: -50%;
     left: -50%;
     width: 200%;
     height: 200%;
-    min-height: 400px;
-    height: 400px;
-    max-height: 400px;
+    min-height: 450px;
+    height: 450px;
+    max-height: 450px;
     overflow: hidden;
     /* display: block;
 position: relative;

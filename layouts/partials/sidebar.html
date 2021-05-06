@@ -24,12 +24,14 @@
             {{ end }}
         </ul>
 
-        <h5>LATEST</h5>
-        <ul class="sidebar-menu">
-            {{ range first 10 $.Site.RegularPages.ByPublishDate.Reverse }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
+        <div class="latest visible-sm visible-md visible-lg">
+            <h5>LATEST</h5>
+            <ul class="sidebar-menu">
+                {{ range first 10 $.Site.RegularPages.ByPublishDate.Reverse }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
 
         <div class="sidebar-menu-tags">
                 {{ with .Site.Menus.tags}}
