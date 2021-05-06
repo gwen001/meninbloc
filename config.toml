@@ -10,7 +10,9 @@ googleAnalytics = ""
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "default"
+  image = "img/banner.jpg"
   description = "it's just about block climbing"
+  keywords = "climbing,bouldering,rockclimbling,blockclimbing,outdoor"
   copyright = ""
   sidebarAbout = [
     "it's just about block climbing",

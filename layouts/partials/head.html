@@ -2,6 +2,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {{ with .Site.Title }}<title>{{ . }}</title>{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image"/>
+{{ with .Site.Params.image }}<meta name="twitter:image" content="{{ . | absURL }}"/>{{ end }}
+<meta name="twitter:title" content="{{ .Site.Title }}"/>
+<meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+<meta name="twitter:site" content="{{ .Site.Title }}"/>
+<meta name="twitter:creator" content="@gwendallecoguic"/>
+<meta property="og:title" content="{{ .Site.Title }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ "/" | absURL }}" />
+{{ with .Site.Params.image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+<meta property="og:updated_time" content="2020-04-04T00:00:00+00:00" /><meta property="og:site_name" content="10degres" />
+<base href="{{ "/" | absURL }}">
+<link rel="canonical" href="{{ "/" | absURL }}">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
