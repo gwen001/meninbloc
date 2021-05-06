@@ -353,11 +353,6 @@ blockquote {
     color: #fff;
 } */
 
-
-
-
-
-
 .entry-header {
     width: 100%;
     overflow: hidden;
@@ -368,10 +363,10 @@ blockquote {
     position: relative;
     /* width: 100%; */
     /* top: 0px; */
-    top: -50%;
+    /* top: -50%;
     left: -50%;
     width: 200%;
-    height: 200%;
+    height: 200%; */
     min-height: 450px;
     height: 450px;
     max-height: 450px;
