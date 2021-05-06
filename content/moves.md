@@ -1,8 +1,8 @@
 +++
 date = "2020-01-01"
 title = "Moves"
-preview = "img/previews/moves.png"
-image = "img/articles/moves.png"
+preview = "img/previews/moves.jpg"
+image = "img/articles/moves.jpg"
 +++
 
 A curated list of climbing moves.

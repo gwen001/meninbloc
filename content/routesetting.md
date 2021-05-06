@@ -1,8 +1,8 @@
 +++
 date = "2020-01-03"
 title = "Routesetting"
-preview = "img/previews/routesetting.png"
-image = "img/articles/routesetting.png"
+preview = "img/previews/routesetting.jpg"
+image = "img/articles/routesetting.jpg"
 +++
 
 About routesetting.
