@@ -145,6 +145,11 @@ blockquote {
     color: #999 !important;
     font-weight: normal;
 }
+.small-navbar {
+    padding-right: 15px;
+    position: inherit;
+    z-index: 99;
+}
 .box-masonry {
     border: 1px solid #d4d4d5;
     box-shadow: none;
@@ -315,18 +320,15 @@ blockquote {
 
 
 .header-title {
-    position: absolute;
-    top: 0;
     display: table;
-    margin-top: 0;
-    width: 100%;
     height: 450px;
+    margin: 0px;
     overflow: hidden;
-}
-X
-.header-title {
+    position: absolute;
     text-align: center;
-    margin: 0px 0 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .header-title .header-title-wrap {
