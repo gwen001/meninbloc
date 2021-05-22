@@ -45,7 +45,7 @@ About routesetting.
 
 ## Requirements
 
-* great climbing skill
+* strong climbing skill
 * general climbing knowledge
 * good physical condition
 * creativity
