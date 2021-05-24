@@ -38,6 +38,7 @@ About routesetting.
 ## Things to consider
 
 * security
+* genders
 * size/distance
 * power/strength
 * design
