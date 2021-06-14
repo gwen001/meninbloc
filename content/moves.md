@@ -32,6 +32,7 @@ https://www.99boulders.com/climbing-moves-holds-and-technique
 * heel hook
 * toe hook
 * bicycle
+* flag / inside flag / reverse flag
 * bridge
 * bat hang
 * pinch
