@@ -24,7 +24,6 @@ https://www.99boulders.com/climbing-moves-holds-and-technique
 * palming
 * mantle
 * undercling
-* side pull
 * dyno
 * gaston move
 * knee bar
